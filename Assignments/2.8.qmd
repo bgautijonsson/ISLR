@@ -1,0 +1,15 @@
+---
+title: "Assignment 2.8"
+format: html
+---
+
+This ex
+
+
+**Solution:**
+
+```{r}
+d <- read.csv()
+list.files()
+```
+
