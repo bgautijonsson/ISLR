@@ -1,0 +1,31 @@
+---
+title: "Assignment 2.8"
+format: html
+---
+
+```{r}
+library(here)
+library(readr)
+library(dplyr)
+```
+
+
+
+
+**Solution:**
+
+```{r}
+d <- read_csv(here("data", "College.csv"))
+
+d |> 
+  mutate_at(vars(1:2), as.factor) |> 
+  select(-(1:2)) |> 
+  pairs()
+```
+
+```{python}
+import pandas as pd
+import os
+
+d = pd.read_csv("../../data/College.csv")
+```
